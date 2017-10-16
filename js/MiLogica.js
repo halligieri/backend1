@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 
 $(document).ready(function () {
@@ -12,7 +8,7 @@ $(document).ready(function () {
         this.efe_aja = $.ajax({
             url: request,
             cache: false,
-            beforeSend: function () { /*httpR es la variable global donde guardamos la conexion*/
+            beforeSend: function () {
                 $(document).ajaxStop();
                 $(document).ajaxStart();
             },
@@ -24,7 +20,7 @@ $(document).ready(function () {
             success: function (datos) {
                 metodo(datos);
             },
-            error: function () {//jqXHR, textStatus, errorThrown 
+            error: function () {
                 alert('Algunas funciones de sistema no se han cargado correctamente\n debido a un problema de conectividad con Internet.\n Verifique su conexión a internet');
             }
         });
@@ -70,6 +66,7 @@ $(document).ready(function () {
             f_ajax(request, cadena, metodoCal);
         }, 1000);
     });
+
 
 
 

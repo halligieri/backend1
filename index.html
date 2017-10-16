@@ -20,7 +20,7 @@
                 <h1>Buscador</h1>
             </div>
             <div class="colFiltros">
-                <form id="formulario" name="formulario">
+                <form action="filtro.php" id="formulario" name="formulario">
                     <div class="filtrosContenido">
                         <div class="tituloFiltros">
                             <h5>Realiza una búsqueda personalizada</h5>
@@ -29,12 +29,15 @@
                             <label for="selectCiudad">Ciudad:</label>
                             <select name="selectCiudad" id="selectCiudad"  style="display: block; margin-top: 30px;">
                                 <option value="" selected>Elige una ciudad</option>
+
                             </select>
                         </div>
                         <div class="filtroTipo input-field">
                             <label for="selecTipo">Tipo:</label><br>
                             <select name="selectTipo" id="selectTipo" style="display: block; margin-top: inherit;">
                                 <option value="" selected>Elige un tipo</option>
+
+
                             </select>
                         </div>
                         <div class="filtroPrecio">
@@ -52,7 +55,7 @@
                     <h5>Resultados de la búsqueda:</h5>
                     <div id="Resultado" style="width: 100%;"></div>
                     <div class="divider"></div>
-                    
+
                     <button type="button" name="todos" id="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
                 </div>
 
